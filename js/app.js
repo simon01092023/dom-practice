@@ -8,11 +8,10 @@ const ulEl = document.querySelector('ul');
 game.players.forEach(function(player){
     const liEl = document.createElement('li');
     liEl.innerText = player
+    liEl.setAttribute('class', 'player')
     console.log(liEl)
     ulEl.appendChild(liEl)
 });
-
-
 
 const scoreEl = document.querySelector('#score')
 console.log(scoreEl)
